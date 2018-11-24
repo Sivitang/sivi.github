@@ -1,0 +1,48 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+# SEO settings
+title: Sivi
+description: "Sivi's small world"
+keywords: "Sivi,freestyle,mood"
+baseurl: "/end2end"
+
+google_analytics: UA-52446115-1
+repo: http://github.com/nandomoreirame/end2end
+disqus_shortname: "nandothemes"
+disqus_site_shortname: "nandothemes"
+
+# Author settings
+author:
+  name: Sivi Tang
+  bio: "Enthusiast performance, responsive design and usability, always looking for the best food and good cup of tea."
+  thumb: /images/sivi.jpg
+  email: xtangan@connect.ust.hk
+  github: https://github.com/Sivitang
+
+# navbar pages
+navbar:
+  - slug: about
+    title: About
+  - slug: icons
+    title: Icons
+  - slug: blog
+    title: Blog
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
